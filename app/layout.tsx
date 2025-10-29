@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, Outfit } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
-import { ClerkLoaded, ClerkProvider, GoogleOneTap } from "@clerk/nextjs";
+import { ClerkProvider, GoogleOneTap } from "@clerk/nextjs";
 
-const inter = Outfit({ subsets: ["latin"] });
+const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "AI Course Generator",
@@ -13,17 +13,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <ClerkProvider>
-        <GoogleOneTap />
-        <body className={inter.className}>
-          <ClerkLoaded>{children}</ClerkLoaded>
-        </body>
-      </ClerkProvider>
+      <body className={outfit.className}>
+        <ClerkProvider>
+          <GoogleOneTap />
+          {children}
+        </ClerkProvider>
+      </body>
     </html>
   );
 }
