@@ -2,10 +2,9 @@
 import React from "react";
 import Image from "next/image";
 
-const Page = () => {
+export default function Page() {
   return (
-  
-
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 p-10">
       {/* 🐍 Python Demo Course Card */}
       <div className="bg-white shadow-md rounded-xl p-6 text-center max-w-md">
         {/* 📸 Image from public folder */}
@@ -33,6 +32,4 @@ const Page = () => {
       </div>
     </div>
   );
-};
-
-export default Page;
+}
