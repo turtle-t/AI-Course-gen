@@ -147,19 +147,6 @@ const CreateCoursePage = () => {
               Next
             </Button>
           )}
-
-          {/* ✅ New Demo Button — Appears when loading (after Generate Course is clicked) */}
-          {loading && (
-            <a
-              href="https://smartedu-ai-demo.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button variant="secondary" className="ml-4">
-                View Demo
-              </Button>
-            </a>
-          )}
         </div>
       </div>
       <LoadingDialog loading={loading} />
