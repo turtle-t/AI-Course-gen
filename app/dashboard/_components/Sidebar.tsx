@@ -37,17 +37,7 @@ const Sidebar = () => {
         ))}
       </ul>
 
-      <div className="absolute bottom-10 w-[80%]">
-        <Progress value={(userCourseList.length / 5) * 100} />
-        <h2 className="text-sm my-2">
-          {userCourseList.length} out of 5 Courses created
-        </h2>
-        <Link href="/upgrade">
-          <h2 className="text-xs text-gray-500">
-            Upgrade your Plan for Unlimited
-          </h2>
-        </Link>
-      </div>
+      
     </div>
   );
 };
