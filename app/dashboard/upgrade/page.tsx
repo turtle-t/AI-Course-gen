@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Page = () => {
   return (
-    
+  
 
       {/* 🐍 Python Demo Course Card */}
       <div className="bg-white shadow-md rounded-xl p-6 text-center max-w-md">
